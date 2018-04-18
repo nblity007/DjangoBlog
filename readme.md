@@ -25,3 +25,4 @@
 	(migrate命令按照app顺序建立或者更新数据库, 将models.py与数据库同步)
 
 进入Django中的交互式shell来进行数据库的增删改查等操作
+
