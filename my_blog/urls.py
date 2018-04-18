@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from article import views  # @UnresolvedImport
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('',views.home),
+    path('<int:my_args>',views.detail,name='detail')
 ]
