@@ -26,3 +26,5 @@
 
 进入Django中的交互式shell来进行数据库的增删改查等操作
 
+使用markdown之前，先安装markdown库
+	pip instal markdown
