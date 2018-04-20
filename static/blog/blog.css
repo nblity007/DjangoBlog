@@ -17,7 +17,7 @@ h3 {
     font-weight: 100;
 }
 
-/* LAYOUT CSS */
+LAYOUT CSS
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -35,7 +35,7 @@ h3 {
 
 .sidebar {
     background: rgb(61, 79, 93);
-    color: #fff;
+    color: #aaa;
 }
 
 .brand-title,
@@ -48,7 +48,7 @@ h3 {
 .brand-tagline {
     font-weight: 300;
     color: rgb(176, 202, 219);
-}
+} 
 
 .nav-list {
     margin: 0;
