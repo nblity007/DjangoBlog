@@ -19,7 +19,7 @@ from article import views  # @UnresolvedImport
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('<int:my_args>',views.detail,name='detail'),
+    path('',views.home,name='home'),
+    path('detail/<int:id>',views.detail,name='detail'),
     path('test/',views.test)
 ]
