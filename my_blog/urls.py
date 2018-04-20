@@ -16,10 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from article import views  # @UnresolvedImport
-
+from article.views import RSSFeed  # @UnresolvedImport
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name='home'),
     path('detail/<int:id>',views.detail,name='detail'),
-    path('test/',views.test)
+    path('test/',views.test),
+    path('archives/',views.archives,name='archives'),
+    path('aboutme/',views.aboutme,name='aboutme'),
+    path('tag/<str:tag>',views.search_tag,name='search_tag'),
+    path('search/',views.blog_search,name='search'),
+    path('feed/',RSSFeed(),name='RSS'),
 ]

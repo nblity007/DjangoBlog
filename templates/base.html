@@ -23,14 +23,25 @@
 	                        <a class="button-success pure-button" href="/">Home</a>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a class="button-success pure-button" href="/">Archive</a>
+	                        <a class="button-success pure-button" href="{%url 'archives'%}">Archives</a>
 	                    </li>
 	                    <li class="nav-item">
-	                        <a class="pure-button" href="https://github.com/nblity007">Github</a>
+	                        <a class="pure-button" href="https://github.com/nblity007" target="blank">Github</a>
 	                    </li>
 	                    <!-- <li class="nav-item">
 	                        <a class="pure-button" href="http://weibo.com/dinosaurliu">Weibo</a>
 	                    </li> -->
+	                     <li class="nav-item">
+	                        <a class="button-success pure-button" href="/">Pages</a>
+	                   	 </li>
+						 <li>
+		                    <form class="pure-form" action="/search/" method="get">
+		                    <input class="pure-input-3-3" type="text" name="s" placeholder="search">
+		                    </form>
+	                     </li>
+	                     <li class="nav-item">
+	                         <a class="button-success pure-button" href="{% url 'RSS' %}">RSS</a>  
+	                     </li>
 	                </ul>
 	            </nav>
 	        </div>
@@ -43,7 +54,7 @@
 	            <div class="footer">
 	                <div class="pure-menu pure-menu-horizontal pure-menu-open">
 	                    <ul class="pure-menu-list">
-	                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://andrewliu.tk/about/">About Me</a></li>
+	                        <li class="pure-menu-item"><a class="pure-menu-link" href="{%url 'aboutme'%}">About Me</a></li>
 	                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://twitter.com/yuilibrary/">Twitter</a></li>
 	                        <li class="pure-menu-item"><a class="pure-menu-link" href="http://github.com/yahoo/pure/">GitHub</a></li>
 	                    </ul>
