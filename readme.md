@@ -28,3 +28,8 @@
 
 使用markdown之前，先安装markdown库
 	pip instal markdown
+使用高亮
+	pip install Pygments
+	选择高亮的样式，demo地址：http://pygments.org/demo/6734157/?style=monokai
+	参数说明-S:样式
+		pygmentize -S monokai -f html -a .codehilite > monokai.css
